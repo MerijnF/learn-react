@@ -1,8 +1,8 @@
 import { MouseEventHandler, useState } from "react";
-import "./TikTakToe.css";
+import "./TikTakToeGame.css";
 type SquareValue = "X" | "O" | null;
 
-function TikTakToe() {
+function TikTakToeGame() {
   const [history, setHistory] = useState<SquareValue[][]>([
     Array(9).fill(null),
   ]);
@@ -143,4 +143,4 @@ function Square({
   );
 }
 
-export default TikTakToe;
+export default TikTakToeGame;
