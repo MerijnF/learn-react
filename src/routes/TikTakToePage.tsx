@@ -1,4 +1,4 @@
-import TikTakToeGame from "../components/TikTakToeGame/TikTak.ToeGame";
+import TikTakToeGame from "../components/tik-tak-toe/TikTak.ToeGame";
 
 function TikTakToePage() {
   return (
