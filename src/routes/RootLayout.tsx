@@ -5,10 +5,17 @@ function RootLayout() {
     <>
       <div style={{ display: "flex", flexDirection: "row" }}>
         <div style={{ paddingRight: "20px" }}>
-          <Link to="/">
-            <h1>Learn React</h1>
-          </Link>
-          <Link to="/tik-tak-toe">Tik-Tak-Toe</Link>
+          <div>
+            <Link to="/">
+              <h1>Learn React</h1>
+            </Link>
+          </div>
+          <div>
+            <Link to="/tik-tak-toe">Tik-Tak-Toe</Link>
+          </div>
+          <div>
+            <Link to="/counter">Counter</Link>
+          </div>
         </div>
         <div style={{ flexGrow: "1", paddingTop: "30px" }}>
           <Outlet />

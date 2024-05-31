@@ -6,6 +6,9 @@ import "./index.css";
 import TikTakToePage from "./routes/TikTakToePage.tsx";
 import ErrorPage from "./routes/ErrorPage.tsx";
 import IndexPage from "./routes/IndexPage.tsx";
+import { Provider } from "react-redux";
+import store from "./app/store.ts";
+import CounterPage from "./routes/CounterPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -21,12 +24,18 @@ const router = createBrowserRouter([
         path: "tik-tak-toe",
         element: <TikTakToePage />,
       },
+      {
+        path: "counter",
+        element: <CounterPage />,
+      },
     ],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
