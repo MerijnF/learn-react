@@ -16,6 +16,9 @@ function RootLayout() {
           <div>
             <Link to="/counter">Counter</Link>
           </div>
+          <div>
+            <Link to="/posts">Posts</Link>
+          </div>
         </div>
         <div style={{ flexGrow: "1", paddingTop: "30px" }}>
           <Outlet />

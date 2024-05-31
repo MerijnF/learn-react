@@ -9,6 +9,7 @@ import IndexPage from "./routes/IndexPage.tsx";
 import { Provider } from "react-redux";
 import store from "./app/store.ts";
 import CounterPage from "./routes/CounterPage.tsx";
+import PostListPage from "./routes/PostListPage/PostsListPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "counter",
         element: <CounterPage />,
+      },
+      {
+        path: "posts",
+        element: <PostListPage />,
       },
     ],
   },
