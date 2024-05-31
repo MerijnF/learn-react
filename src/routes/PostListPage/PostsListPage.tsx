@@ -1,6 +1,6 @@
 import AddPostForm from "./AddPostForm";
 import PostList from "./PostList";
-import "./PostListPage.css";
+import "../../features/posts/Post.css";
 
 function PostListPage() {
   return (

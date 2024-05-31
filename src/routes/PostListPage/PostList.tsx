@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useAppSelector } from "../../app/hooks";
 function PostList() {
   const posts = useAppSelector((state) => state.posts);
@@ -6,6 +7,7 @@ function PostList() {
     <article className="post" key={post.id}>
       <h3>{post.title}</h3>
       <p className="post-content">{post.content?.substring(0, 100)}</p>
+      <Link to={`/post/${post.id}`}>Read More</Link>
     </article>
   ));
 

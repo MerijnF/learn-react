@@ -10,6 +10,7 @@ import { Provider } from "react-redux";
 import store from "./app/store.ts";
 import CounterPage from "./routes/CounterPage.tsx";
 import PostListPage from "./routes/PostListPage/PostsListPage.tsx";
+import { PostPage } from "./routes/PostPage/PostPage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "posts",
         element: <PostListPage />,
+      },
+      {
+        path: "post/:postId",
+        element: <PostPage />,
       },
     ],
   },
